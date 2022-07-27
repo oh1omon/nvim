@@ -25,6 +25,11 @@ Plug 'https://github.com/nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
+" Plugins for buffer
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'akinsho/bufferline.nvim'
+Plug 'moll/vim-bbye'
+
 " Airline and themes for it
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
@@ -78,6 +83,8 @@ lua require'_treesitter'
 lua require'_comment'
 lua require'_autopairs'
 lua require'_telescope'
+lua require'_buffer'
+lua require'keymaps'
 
 "Setting keymaps for telescope
 nnoremap ff <cmd>lua require('telescope.builtin').find_files()<cr>
