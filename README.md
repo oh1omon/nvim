@@ -42,3 +42,4 @@ How to get started?
       9. tsserver
       10. omnisharp
    3. Restart nvim
+4. Please pay attention, that there might be an error with markdown-preview plugin installation. If it gives you an error on postinstall hook, just open dummy markdown file and run ´:call mkdp#util#install()´
