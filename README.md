@@ -11,14 +11,11 @@
 #### Installations with NPM prior for this config to work
 
 - prettierd
-- dockerfile-language-server-nodejs
 - eslint
 - typescript
-- typescript-language-server
 - vscode-langservers-extracted
-- yaml-language-server
 
-#### Installation with BREW prior for this config to work
+#### Installations with BREW prior for this config to work
 
 - cmake
 - ripgrep
