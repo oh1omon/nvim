@@ -13,10 +13,6 @@ set fileformat=unix
 set clipboard=unnamed
 set nohlsearch
 
-inoremap jj <esc>
-
-nnoremap <C-t> :NERDTreeToggle<CR>
-
 call plug#begin()
 
 Plug 'https://github.com/nvim-lua/plenary.nvim'
@@ -85,12 +81,6 @@ lua require'_autopairs'
 lua require'_telescope'
 lua require'_buffer'
 lua require'keymaps'
-
-"Setting keymaps for telescope
-nnoremap ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 " Adding this autocmd specifically for terraform lsp to proper work
 autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
