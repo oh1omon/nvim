@@ -1,4 +1,4 @@
-local opts = { noremap = false, silent = true }
+local opts = { noremap = true, silent = true }
 
 local keymap = vim.api.nvim_set_keymap
 
@@ -10,8 +10,8 @@ keymap("n", "<S-j>", ":bprevious<CR>", opts)
 -- ESC in Insert mode
 keymap("i", "jj", "<Esc>", opts)
 
--- NerdTree toggle TODO
-keymap("n", "C-t", ":NERDTreeToggle", opts)
+-- NvimTree toggle
+keymap("n", "<C-t>", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
 keymap("n", "ff", "<cmd>lua require('telescope.builtin').find_files()<cr>", opts)

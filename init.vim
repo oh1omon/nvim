@@ -34,7 +34,7 @@ Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/numToStr/Comment.nvim'
 Plug 'https://github.com/JoosepAlviste/nvim-ts-context-commentstring'
 
-Plug 'https://github.com/preservim/nerdtree'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " Treesitter plugins
 Plug 'https://github.com/nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -70,8 +70,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 call plug#end()
 
 " Theme
-lua require('monokai').setup { palette = require('monokai').pro }
-
+lua require'_colorscheme'
 lua require'_cmp'
 lua require'_gitsigns'
 lua require'lsp'
@@ -80,13 +79,8 @@ lua require'_comment'
 lua require'_autopairs'
 lua require'_telescope'
 lua require'_buffer'
-lua require'keymaps'
+lua require'_keymaps'
+lua require'_nvimtree'
 
 " Adding this autocmd specifically for terraform lsp to proper work
 autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
-
-" Start NERDTree. If a file is specified, move the cursor to its window.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
-
-let NERDTreeShowHidden=1
