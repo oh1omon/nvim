@@ -43,3 +43,22 @@ How to get started?
       10. omnisharp
    3. Restart nvim
 4. Please pay attention, that there might be an error with markdown-preview plugin installation. If it gives you an error on postinstall hook, just open dummy markdown file and run ´:call mkdp#util#install()´
+
+### Some hotkeys
+
+| Action                      | Hotkey |
+| --------------------------- | ------ |
+| Esc                         | jj     |
+| Code Action                 | FF     |
+| Format                      | F      |
+| Go to Declaration           | gD     |
+| Go to Definition            | gd     |
+| Comment                     | gcc    |
+| Go to next buffer           | L      |
+| Go to previous buffer       | J      |
+| Close current buffer        | Q      |
+| Find files with Telescope   | ff     |
+| Find buffers with Telescope | fb     |
+| Show live grep              | fg     |
+| Toggle Nvim tree            | CTRL-t |
+| Remove complettion window   | CTRL-e |
