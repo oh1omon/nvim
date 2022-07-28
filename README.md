@@ -7,6 +7,7 @@
 - nvim
 - nodejs and npm
 - dotnet sdk
+- Terminal (I personally use iTerm2, since default MacOS terminal does not work with themes)
 
 #### Installations with NPM prior for this config to work
 
@@ -27,8 +28,9 @@
 How to get started?
 
 1. Install mentioned above modules
-2. Open your nvim (it might be throwing dozens of errors for now) and run :PlugInstall
-3. Setup Lsp Servers
+2. Open your nvim (it will automatically install packer and plugins)
+3. After the message "Installing packer close and reopen Neovim..." close and reopen you nvim
+4. Setup Lsp Servers
    1. Run :LspInstallInfo
    2. In opened window select and install with (i) next languages:
       1. dockerls
@@ -42,7 +44,7 @@ How to get started?
       9. tsserver
       10. omnisharp
    3. Restart nvim
-4. Please pay attention, that there might be an error with markdown-preview plugin installation. If it gives you an error on postinstall hook, just open dummy markdown file and run ´:call mkdp#util#install()´
+5. Please pay attention, that there might be an error with markdown-preview plugin installation. If it gives you an error on postinstall hook, just open dummy markdown file and run ´:call mkdp#util#install()´
 
 ### Some hotkeys
 

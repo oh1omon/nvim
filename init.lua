@@ -1,4 +1,5 @@
 require("plugins")
+require("_options")
 require("_colorscheme")
 require("_cmp")
 require("_gitsigns")

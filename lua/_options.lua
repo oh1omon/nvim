@@ -13,7 +13,6 @@ local options = {
 	hlsearch = false,
 	splitbelow = true,
 	splitright = true,
-	signcolumn = true,
 }
 
 for k, v in pairs(options) do
