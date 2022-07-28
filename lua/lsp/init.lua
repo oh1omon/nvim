@@ -114,3 +114,8 @@ lspconfig.terraformls.setup({
 	on_attach = handlers.on_attach,
 	capabilities = handlers.capabilities,
 })
+-- Some additional scripts needed for terraformls to work
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+	pattern = { "*.tf", "*.tfvars" },
+	callback = vim.lsp.buf.formatting_sync,
+})
