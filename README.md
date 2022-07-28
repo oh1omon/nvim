@@ -29,7 +29,7 @@ How to get started?
 
 1. Install mentioned above modules
 2. Open your nvim (it will automatically install packer and plugins)
-3. After the message "Installing packer close and reopen Neovim..." close and reopen you nvim
+3. After the message "Installing packer, press enter, then type N, and press enter again" press enter and then type "N" and press enter again. Now you can close and reopen you nvim
 4. Setup Lsp Servers
    1. Run :LspInstallInfo
    2. In opened window select and install with (i) next languages:
