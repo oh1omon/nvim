@@ -20,6 +20,7 @@ require("nvim-treesitter.configs").setup({
 		"yaml",
 		"dockerfile",
 		"hcl",
+		"bash",
 	},
 	highlight = {
 		enable = true,
