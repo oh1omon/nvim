@@ -19,6 +19,11 @@ lspconfig.yamlls.setup({
 	},
 })
 
+lspconfig.bashls.setup({
+	on_attach = handlers.on_attach,
+	capabilities = handlers.capabilities,
+})
+
 lspconfig.marksman.setup({
 	on_attach = handlers.on_attach,
 	capabilities = handlers.capabilities,
