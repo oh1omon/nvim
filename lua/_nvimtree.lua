@@ -4,10 +4,7 @@ local nvim_tree = require("nvim-tree")
 
 nvim_tree.setup({
 	open_on_setup = true,
-	-- open_on_tab = true,
 	ignore_buffer_on_setup = true,
-	-- disable_netrw = true,
-	-- hijack_netrw = true,
 	update_cwd = true,
 	diagnostics = {
 		enable = true,
