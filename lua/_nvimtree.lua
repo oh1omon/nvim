@@ -9,6 +9,14 @@ nvim_tree.setup({
 	diagnostics = {
 		enable = true,
 	},
+	actions = {
+		open_file = {
+			resize_window = true,
+		},
+	},
+	view = {
+		width = 50,
+	},
 	git = {
 		enable = true,
 		ignore = true,
