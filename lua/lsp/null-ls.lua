@@ -22,7 +22,7 @@ null_ls.setup({
 		-- Setting a keymap to call code actions exclusively to Null-LS server
 		vim.api.nvim_buf_set_keymap(bufnr, "n", "FF", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
 		-- This script will autoformat file on save with Null-LS server
-		if client.resolved_capabilities.document_formatting then
+		if client.server_capabilities.document_formatting then
 			vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
 		end
 	end,
