@@ -1,6 +1,9 @@
 # My nvim config
 
 ## It is the first version and it is still under production, so this MD will not have much useful info, but it will be updated soon ;)
+#### Updates to come to this README
+- Setting alias "vi"
+- Customizing, e. g. adding some languages packages
 
 ### Before we start, I need to mention, that this config has been set up for MacOS and it has not been tested on other OS. So, lets start and we obviously should install some software and here is a short list of it:
 
