@@ -6,7 +6,6 @@
 - Customizing, e. g. adding some languages packages
 - Updates to actual README
 - Make an article on this config
-- https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Avoiding-LSP-formatting-conflicts
 
 ### Before we start, I need to mention, that this config has been set up for MacOS and it has not been tested on other OS. So, lets start and we obviously should install some software and here is a short list of it:
 
