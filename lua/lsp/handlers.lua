@@ -46,6 +46,6 @@ M.on_attach = function(client, bufnr)
 	client.server_capabilities.document_formatting = false
 end
 
-M.capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+M.capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 return M
