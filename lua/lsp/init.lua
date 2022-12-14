@@ -105,6 +105,11 @@ lspconfig.jsonls.setup({
 	},
 })
 
+lspconfig.pylsp.setup({
+	on_attach = handlers.on_attach,
+	capabilities = handlers.capabilities,
+})
+
 lspconfig.cssls.setup({
 	on_attach = handlers.on_attach,
 	capabilities = handlers.capabilities,
