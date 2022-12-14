@@ -1,10 +1,9 @@
 # My nvim config
 
 ## It is the first version and it is still under production, so this MD will not have much useful info, but it will be updated soon ;)
+
 #### Updates to come to this README
-- Setting alias "vi"
-- Customizing, e. g. adding some languages packages
-- Updates to actual README
+
 - Make an article on this config
 
 ### Before we start, I need to mention, that this config has been set up for MacOS and it has not been tested on other OS. So, lets start and we obviously should install some software and here is a short list of it:
@@ -30,6 +29,10 @@
 - treesitter
 - uncrustify
 
+#### A small advice, if you don't mind
+
+Specify in your shell settings (for example, .zshrc) a line with `alias vi="nvim"`. This way you will be able to opn your Neovim with only typing vi insted of nvim. If you want, you still be able to call your usual Vi with command `\vi`, as it will ignore the alias we have created.
+
 How to get started?
 
 1. Install mentioned above modules
@@ -49,8 +52,9 @@ How to get started?
       9. tsserver
       10. omnisharp
       11. bashls
-   3. Restart nvim
-5. Please pay attention, that there might be an error with markdown-preview plugin installation. If it gives you an error on postinstall hook, just open dummy markdown file and run ´:call mkdp#util#install()´
+   3. You also might need to install TreeSitter packages for some languages with command `:TSInstall "lng"`
+   4. Restart nvim
+5. Please pay attention, that there might be an error with markdown-preview plugin installation. If it gives you an error on postinstall hook, just open dummy markdown file and run `:call mkdp#util#install()`
 
 ### Some hotkeys
 
